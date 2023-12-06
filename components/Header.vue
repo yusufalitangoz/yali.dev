@@ -45,6 +45,6 @@ const isOpen = ref(false)
     <USlideover v-model="isOpen" :ui="{ base: 'p-5 block' }">
         <UButton color="gray" variant="ghost" icon="i-heroicons-x-mark-20-solid" class="-my-1" @click="isOpen = false" />
         <UButton class="mt-4 w-full" size="lg" variant="link" v-for="link in links" :key="link.href" :to="link.href"
-            :aria-label="link.label" :label="link.label" />
+            @click="isOpen = false" :aria-label="link.label" :label="link.label" />
     </USlideover>
 </template>
