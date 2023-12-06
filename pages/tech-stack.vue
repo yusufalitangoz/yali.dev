@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { TechStackGroupProps } from "@/types/tech-stack";
+import type { TechStackGroupProps } from "@/types";
 
 const techStackGroups: TechStackGroupProps[] = [
     {
@@ -24,9 +24,7 @@ const techStackGroups: TechStackGroupProps[] = [
             <div v-for="group in techStackGroups" :key="group.title">
                 <h2 class="text-xl font-bold mb-5">{{ group.title }}</h2>
                 <div class="flex flex-wrap gap-5">
-                    <UBadge variant="solid" color="white" v-for="item in group.items" :key="item">
-                        {{ item }}
-                    </UBadge>
+                    <UBadge variant="solid" color="white" v-for="item in group.items" :key="item" :label="item" />
                 </div>
             </div>
         </div>

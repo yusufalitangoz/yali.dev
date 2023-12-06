@@ -1,5 +1,5 @@
 <script lang="ts">
-import type { SocialProps } from '@/types/about';
+import type { SocialProps } from '@/types';
 
 const socials: SocialProps[] = [
     {
