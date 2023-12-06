@@ -17,7 +17,7 @@ const links: LinkProps[] = [
     { label: 'Projects', href: '/projects' },
 ]
 
-const isOpen = ref(false)
+const isOpen = useState<boolean>("isOpen", () => false)
 
 </script>
 
