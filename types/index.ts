@@ -13,3 +13,11 @@ export type TechStackGroupProps = {
   title: string;
   items: string[];
 };
+
+export type ProjectProps = {
+  name: string;
+  description: string;
+  website?: string;
+  github?: string;
+  tags: string[];
+};
