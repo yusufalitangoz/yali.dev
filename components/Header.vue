@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { LinkProps } from '@/types'
+import type { LinkProps } from "~/types";
 const colorMode = useColorMode()
 
 const isDark = computed({

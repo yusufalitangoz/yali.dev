@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import ProjectsClient from '~/clients/projects';
+import ProjectsClient from "~/clients/projects";
 
 const client = new ProjectsClient();
 

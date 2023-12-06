@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import type { TechStackGroupProps } from '@/types';
+import type { TechStackGroupProps } from "~/types";
 
 defineProps({
     groups: {
