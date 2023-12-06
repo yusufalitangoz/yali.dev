@@ -19,14 +19,7 @@ const techStackGroups: TechStackGroupProps[] = [
             I'm using these technologies to build web applications.
         </p>
     </div>
-    <div class="mt-14">
-        <div class="flex flex-col gap-10">
-            <div v-for="group in techStackGroups" :key="group.title">
-                <h2 class="text-xl font-bold mb-5">{{ group.title }}</h2>
-                <div class="flex flex-wrap gap-5">
-                    <UBadge variant="solid" color="white" v-for="item in group.items" :key="item" :label="item" />
-                </div>
-            </div>
-        </div>
+    <div class="mt-14 flex flex-col gap-10">
+        <TechStackGroup :groups="techStackGroups" />
     </div>
 </template>
