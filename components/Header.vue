@@ -25,7 +25,7 @@ const isOpen = useState<boolean>("isOpen", () => false)
     <UContainer class="flex items-center py-4">
         <p class="text-lg font-semibold">yali.dev</p>
         <div class="flex gap-2 sm:gap-5 ml-auto items-center">
-            <ULink class="invisible sm:visible text-sm" active-class="text-primary"
+            <ULink class="hidden sm:flex text-sm" active-class="text-primary"
                 inactive-class="text-gray-500 dark:text-gray-400 hover:text-gray-700 dark:hover:text-gray-200"
                 v-for="link in links" :key="link.href" :to="link.href" :aria-label="link.label">
                 {{ link.label }}
