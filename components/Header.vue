@@ -22,7 +22,7 @@ const isOpen = useState<boolean>("isOpen", () => false)
 </script>
 
 <template>
-    <UContainer class="flex items-center py-4">
+    <header class="flex items-center py-4">
         <p class="text-lg font-semibold">yali.dev</p>
         <div class="flex gap-2 sm:gap-5 ml-auto items-center">
             <ULink class="hidden sm:flex text-sm" active-class="text-primary"
@@ -41,7 +41,7 @@ const isOpen = useState<boolean>("isOpen", () => false)
             </ClientOnly>
         </div>
 
-    </UContainer>
+    </header>
     <USlideover v-model="isOpen" :ui="{ base: 'p-5 block' }">
         <UButton color="gray" variant="ghost" icon="i-heroicons-x-mark-20-solid" class="-my-1" @click="isOpen = false" />
         <UButton class="mt-4 w-full" size="lg" variant="link" v-for="link in links" :key="link.href" :to="link.href"
